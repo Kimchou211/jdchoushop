@@ -74,7 +74,7 @@ async function createTables() {
     name       VARCHAR(120) NOT NULL,
     email      VARCHAR(160) UNIQUE NOT NULL,
     phone      VARCHAR(30)  DEFAULT '',
-    address    TEXT         DEFAULT '',
+    address    TEXT,
     password   VARCHAR(255) NOT NULL,
     role       ENUM('user','admin') DEFAULT 'user',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
