@@ -118,7 +118,7 @@ async function createTables() {
     bill_number    VARCHAR(60) DEFAULT '',
     khqr_string    TEXT,
     telegram_sent  TINYINT(1) DEFAULT 0,
-    notes          TEXT DEFAULT '',
+    notes          TEXT,
     paid_at        TIMESTAMP NULL,
     created_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
