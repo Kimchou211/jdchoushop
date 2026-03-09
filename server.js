@@ -15,7 +15,7 @@ const app = express();
 
 // ─── CONFIG ──────────────────────────────────────────────────
 const BAKONG = {
-  token   : process.env.BAKONG_TOKEN || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiOGEwZDkzMTc2ZTA2NDNhYiJ9LCJpYXQiOjE3NzI2MjUxNDUsImV4cCI6MTc4MDQwMTE0NX0.FLX6f1nhQfgqXnDaTuBvpHaXu-bZHgopGXH7b33740k",
+  token   : process.env.BAKONG_TOKEN || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiOGEwZDkzMTc2ZTA2NDNhYiJ9LCJpYXQiOjE3NzMwMjY3NjYsImV4cCI6MTc4MDgwMjc2Nn0.-0V41KMa7vj2Tf_cl2JjOadrZXursdEeREuG3x_uueU",
   account : process.env.BAKONG_ACCOUNT || "kimchou_kren@bkrt",
   merchant: process.env.BAKONG_MERCHANT || "NyKa_Shop",
   city    : process.env.BAKONG_CITY || "Kampong Chhnang",
@@ -794,3 +794,4 @@ async function start() {
   });
 }
 start().catch(console.error);
+
