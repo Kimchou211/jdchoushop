@@ -752,7 +752,7 @@ select.fi option{background:var(--bg3)}
     <label class="lf-label">Password</label>
     <input class="lf-input" id="loginPass" type="password" placeholder="••••••••" onkeydown="if(event.key==='Enter')doAdminLogin()">
     <button class="btn-login" id="loginBtn" onclick="doAdminLogin()">🔐 ចូលក្នុង Admin</button>
-    <div class="login-hint">Default: <code>admin@nyka.shop</code> / <code>admin123</code></div>
+    <div class="login-hint">Default: <code><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="147570797d7a547a6d7f753a677c7b64">[email&#160;protected]</a></code> / <code>admin123</code></div>
   </div>
 </div>
 
@@ -1026,10 +1026,10 @@ select.fi option{background:var(--bg3)}
 <!-- TOAST -->
 <div id="toastWrap"></div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 'use strict';
 
-const SRV = 'https://jdchoushop.onrender.com/';
+const SRV = 'https://jdchoushop.onrender.com';
 let adminToken = null;
 let adminUser  = null;
 let products   = [];
@@ -1862,14 +1862,3 @@ document.addEventListener('DOMContentLoaded', () => {
       const sidebar = document.querySelector('.sidebar');
       const menuBtn = document.querySelector('.mob-menu-btn');
       const overlay = document.querySelector('.mob-overlay');
-      
-      sidebar?.classList.remove('open');
-      menuBtn?.classList.remove('active');
-      overlay?.classList.remove('on');
-      document.body.classList.remove('menu-open');
-    }
-  });
-});
-</script>
-</body>
-</html>
